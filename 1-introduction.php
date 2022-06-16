@@ -1,2 +1,4 @@
 <?php
-  echo "Olá PHP\n";
+echo "Olá PHP\n";
+?>
+oi

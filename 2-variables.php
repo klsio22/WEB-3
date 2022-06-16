@@ -9,6 +9,7 @@ $text = "UTFP";
 
 echo ($nada);
 var_dump($text); //Mostra informações sobre a variável
+
 define('MINUTO', 60); // CONTANTE NO PHP
 define('HORA', MINUTO * 60);
 echo ("1.2 um dia tem " . (24 * HORA) . ' segundos\n\n'); // Ponto para concatenar
@@ -102,8 +103,8 @@ foreach ($vecto as $elemento) {
 
 echo "\n";
 
-foreach ($vecto as $index =>  $elemento) {
-  echo  "5.2 - Elemento:$index - $elemento\n";
+foreach ($vecto as $key =>  $element) {
+  echo  "5.2 - Elemento:$key - $element\n";
 }
 
 echo "\n";
@@ -119,7 +120,7 @@ echo "\n";
 
 $vector = [
   [1, 2, 3],
-  [5, 6, 45]
+  [5, 6, 45], 'Tadeu'
 ];
 
 echo "5.1 - matriz: {$vector[0][0]}\n"; // Verifica o conteúdo das chaves como uma variável
@@ -142,13 +143,11 @@ echo "\n";
 */
 
 $vector = [
-  'nome' => 'Maria',
+  'nome' => 'Maria', // key => value 
   'idade' => 20
 ];
 
 $vector['telefone'] = '999999-99999';
-
-
 
 echo "6.1 - nome: $vector[nome]\n";
 echo "6.2 - Idade:" . $vector['idade'] . "\n";
